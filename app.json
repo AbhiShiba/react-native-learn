@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "challenge",
+    "slug": "challenge",
+    "version": "1.0.0",
+    "orientation": "default",
+    "icon": "./Components/assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./Components/assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./Components/assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./Components/assets/favicon.png"
+    }
+  }
+}
