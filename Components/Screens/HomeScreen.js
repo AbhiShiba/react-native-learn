@@ -38,27 +38,12 @@ const WelcomeScreen = (props) => {
       style={styles.backgroundImage}
       source={require("../assets/nahida.png")}
     >
-      <View style={styles.formStyle}>
-        <Icons name="shield-alt" size={50} color="#4144ef" />
-        <TextInput
-          style={styles.input}
-          value={inputText}
-          onChangeText={handleTextInput}
-        />
-        <TextInput
-          style={styles.input}
-          value={inputText2}
-          onChangeText={handleTextInput2}
-        />
-        <View style={styles.button}>
-          <Button title="Click" onPress={handleButton} />
-        </View>
+     <View style={styles.NavBar}>
+        <TextInput style={styles.text}>Menu</TextInput>
+     </View>
+     <View style={styles.content}>
 
-
-        <View>
-           {flag && <Text>{`${inputText} - ${inputText2}`}</Text>}
-        </View>
-      </View>
+     </View>
     </ImageBackground>
   );
 };
@@ -72,29 +57,17 @@ const styles = StyleSheet.create({
     alignItems: "center",
     marginTop: 25,
   },
-
-  button: {
-    width: "55%",
-    padding: 10
+  content: {
+    flex: 1,
+    width: "100%",
+    backgroundColor: "rgba(255, 105, 0, 0.5)",
   },
-
-  formStyle: {
-    backgroundColor: "rgba(255, 255, 255, 0.8)",
-    width: "90%",
-    height: "90%",
-    borderRadius: 10,
-    justifyContent: "center",
-    alignItems: "center",
+  NavBar: {
+    flex: 0.2,
+    width: "100%",
+    backgroundColor: "rgba(255, 105, 0, 0.5)",
   },
-
-  input: {
-    borderWidth: 1,
-    width: "50%",
-    height: 30,
-    borderRadius: 5,
-    paddingLeft: 5,
-    paddingRight: 5,
+  text: {
     color: "black",
-    margin: 5,
-  },
+  }
 });
